@@ -16,12 +16,16 @@
 
 : netlify 해당 프로젝트에 들어간 뒤, Site configuration -> Build & deploy => Builtd settings에 들어간다.
 
-: 아래와 같이 설정해주되, Base directory의 경우 배포하고자 하는 페이지의 폴더 위치를 고려해야 한다. (root 디렉토리가 될 것이기에))
-| Runtime | Not set |
-| Base directory | pard_3rd_kimkwangil_introduce |
-| Package directory | Not set |
-| Build command| CI= npm run build |
-| Publish directory | pard_3rd_kimkwangil_introduce/build |
-| Functions directory | pard_3rd_kimkwangil_introduce/netlify/functions |
-| Deploy log visibility| Logs are public |
-| Build status | Active |
+: 아래와 같이 설정해주되, Base directory의 경우 배포하고자 하는 페이지의 폴더 위치를 고려해야 한다. (root 디렉토리가 될 것이기에)
+
+| 내용                  | 값                                              |
+| --------------------- | ----------------------------------------------- | ---- |
+| 테스트1               | 테스트2                                         | 테스 |
+| Runtime               | Not set                                         |
+| Base directory        | pard_3rd_kimkwangil_introduce                   |
+| Package directory     | Not set                                         |
+| Build command         | CI= npm run build                               |
+| Publish directory     | pard_3rd_kimkwangil_introduce/build             |
+| Functions directory   | pard_3rd_kimkwangil_introduce/netlify/functions |
+| Deploy log visibility | Logs are public                                 |
+| Build status          | Active                                          |
