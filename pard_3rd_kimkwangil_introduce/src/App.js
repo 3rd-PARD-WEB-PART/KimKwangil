@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import './Content1.css'
 import './Content2.css'
+import './Content3.css'
 
 function App() {
     return (
@@ -54,7 +55,20 @@ function App() {
                     </p>
                 </div>
             </div>
-            <div className="Content"></div>
+            <div className="Content Content3">
+                <div className="div_CardBox">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7566/7566380.png" alt="music" className="imageFavorite" />
+                    <p className="p_CardBoxContent">MUSIC</p>
+                </div>  
+                <div className="div_CardBox">
+                    <img src = "https://cdn-icons-png.flaticon.com/512/5232/5232044.png" alt = "cook" className = "imageFavorite"/>
+                    <p className="p_CardBoxContent">COOK</p>
+                </div>
+                <div className="div_CardBox">
+                    <img src = "https://cdn-icons-png.flaticon.com/512/4515/4515511.png" alt = "soccer" className = "imageFavorite"/>
+                    <p className="p_CardBoxContent">SOCCER</p>
+                </div>
+            </div>
         </div>
     );
 }

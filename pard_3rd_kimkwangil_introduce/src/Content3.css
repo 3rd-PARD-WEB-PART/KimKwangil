@@ -1,0 +1,54 @@
+.Content3{
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.div_CardBox {
+    width: 300px;
+    height: 400px;
+    background-color: gainsboro;
+    transition: background-color 0.5s ease;
+    border-radius: 15px;
+    animation: fadeInOut 10s ease infinite;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    /* 시작 시 투명도 1 (불투명) */
+    50% {
+        opacity: 0.1;
+    }
+
+    /* 중간 시 투명도 0.5 */
+    100% {
+        opacity: 1;
+    }
+
+    /* 끝 시 다시 투명도 1 */
+}
+
+.div_CardBox:hover{
+    background-color: #FF5C00;
+
+
+}
+
+.imageFavorite{
+    margin: 40px 0px;
+    width: 60%;
+}
+.p_CardBoxContent{
+    font-size: 30px;
+    font-weight: bold;
+}
