@@ -1,0 +1,42 @@
+.MyImage{
+    width: 400px;
+}
+
+.p_ContentTitle{
+    color : black;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.p_ContentContent{
+    margin-left: 15px;
+    color : #FF5C00;
+    font-size: 50px;
+    
+}
+
+.div_Content{
+    width: 50%;
+    background-color: gainsboro;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+    padding : 10px;
+    margin : 10px;
+
+}
+
+.Cotent2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p_Content2Title{
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff;
+
+    margin-bottom: 100px;
+}

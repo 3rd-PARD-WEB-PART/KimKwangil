@@ -1,0 +1,23 @@
+.p_Title{
+    font-size: 100px;
+    font-weight: bold;
+
+    margin-bottom: 200px;
+
+    color : #5262F5;
+}
+
+.p_SubTitle{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 100px;
+    margin-bottom: 200px;
+    color : #fff;
+}
+.p_SubTitl2{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 100px;
+    margin-bottom: 200px;
+    color: #64C59A;
+}
