@@ -1,0 +1,17 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "김광일",
+            "age": "24",
+            "part": "web",
+            "image" : "https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82"
+        }, {
+            "id": 2,
+            "name": "박민지",
+            "age": "25",
+            "part": "web",
+            "image" : "https://item.kakaocdn.net/do/862539f7f2171437385154b3b749990f7154249a3890514a43687a85e6b6cc82"
+        }
+    ]
+}

@@ -1,26 +1,14 @@
-import {Route, Routes} from 'react-router-dom';
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Profile from './Pages/Profile';
-import Articles from './Pages/Articles';
-import Article from './Pages/Article';
-import Layout from './Pages/Layout';
+import { Route, Routes } from "react-router-dom";
+import MyInfo from "./Pages/MyInfo";
+import UpdateInfo from "./Pages/UpdateInfo";
+
 function App() {
     return (
         <Routes>
-            <Route element={<Layout/>}>
-                <Route path="/" element={<Home />}/>
-                <Route path="/about" element={<About />}/>
-                <Route path="/profiles/:username" element={<Profile />}/>
-                <Route path="/articles" element={<Articles />}>
-                    <Route path=":id" element={<Article />}/>
-                </Route>
-            </Route>
+            <Route path="/" element={<MyInfo />} />
+            <Route path="/update" element={<UpdateInfo/>} />
         </Routes>
-    );
+    )
 }
 
 export default App;
-
-
-
