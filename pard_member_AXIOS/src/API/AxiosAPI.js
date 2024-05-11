@@ -7,7 +7,14 @@ const server = process.env.REACT_APP_API_URL;
 // 템플릿 리터럴 (``) 을 이용해서 표현식을 잘 다룰 수 있도록 해봅시다.
 
 export const getMembersAPI = (part) => {
-  // your code here
+  try {
+    const response = axios.get(server);
+    return response;
+  } catch (error) {
+    console.error("Error get data from server", error);
+
+    throw error;
+  }
 };
 
 export const getMemberAPI = (id) => {
