@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React, { useState } from "react";
 import Modal from "./Modal";
+import { deleteMemberAPI } from "../API/AxiosAPI";
 
 function Member(member) {
   member = member.member;
@@ -12,8 +13,9 @@ function Member(member) {
 
   const deleteHandler = async () => {
     try {
-      //your code here
-      //params로 id 넘겨주는거 잊지 맙시다!
+      if (deleteMemberAPI(member.id)) {
+        alert("삭제되었습니다.");
+      }
     } catch (err) {
       console.error(err);
     }

@@ -18,10 +18,10 @@ function App() {
     // URL parameters가 없다면 전체 구성원을 불러오고
     // 있다면 해당 파트의 구성원을 불러옴을 인지하세요.
     // 각각의 파트는 parameter로 'server', 'web', 'iOS' 로 정확히 기입 되어야만 합니다.
-    
+
     let newData = [];
     if (part === "all") {
-      const response = await getMembersAPI();
+      const response = await getMembersAPI("");
       newData = response.data;
     } else {
       const response = await getMembersAPI(part.toLowerCase());

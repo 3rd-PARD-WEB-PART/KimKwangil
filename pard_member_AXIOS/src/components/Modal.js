@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { postMemberAPI } from "../API/AxiosAPI";
+import { patchMemberAPI, postMemberAPI } from "../API/AxiosAPI";
 
 function Modal({ isOpen, closeModal, method, member }) {
   const title = method === "post" ? "REGISTER" : "MODIFY";
@@ -27,11 +27,12 @@ function Modal({ isOpen, closeModal, method, member }) {
 
   const submitHandler = async () => {
     try {
+      console.log("id", member.id);
       // 원래 여기도 구현하라고 하려했지만 patch를 위해 남겨두겠습니다.
       const response =
         method === "post"
           ? await postMemberAPI(newData)
-          : console.log("구현필요");
+          : await patchMemberAPI(member.id, newData);
       closeModal();
     } catch (err) {
       console.error(err);
@@ -57,7 +58,7 @@ function Modal({ isOpen, closeModal, method, member }) {
         })}
         <BtnContainer>
           <CloseBtn onClick={closeModal}>CANCEL</CloseBtn>
-          <AddButton onClick={submitHandler}>OK</AddButton>
+          <AddButton onClick={submitHandler} id={member.id}>OK</AddButton>
         </BtnContainer>
       </Container>
     </Background>
